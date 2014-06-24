@@ -1,0 +1,19 @@
+#ask-question input {
+	height:50px;
+	width:300px;
+	font-size:20px;
+}
+
+#ask-question {
+	margin: 0px !important;
+}
+
+.fa-envelope {
+	font-size:100px;
+	color: #27ae60;
+}
+
+button { 
+	border: none !important;
+	background: none !important;	
+}

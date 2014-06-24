@@ -1,0 +1,27 @@
+
+.fa-plus-circle, .fa-chevron-left {
+	font-size:50px;
+	padding:0px 20px 0px 20px;
+}
+
+a, a:hover {
+	color:#ecf0f1 !important;
+}
+
+.navbar-inner {
+	background: #1abc9c !important;
+	border: 0 none !important;
+}
+
+body {
+	background: #ecf0f1;
+}
+
+.brand {
+	text-align:center !important;
+	color:white !important;
+}
+
+.navbar {
+	margin-bottom:100px;
+}
