@@ -1,16 +1,12 @@
-Router.map(function() {
-	this.route('questionView', {
-		path : '/'
-	});
-}); 
 
-
-Template.questionView.rendered = function() {
+/*
+Template.question_view.rendered = function() {
 	var famousData = famousCmp.dataFromTpl(this);
 	famousData.modifier.setTransform(Transform.translate(0, 0), trans);
-}; 
+}; */
 
-Template.questionView.helpers({
+
+Template.question_view.helpers({
   question: function() {
   	var questions = Questions.find().fetch();
     return questions[Math.floor(Math.random()*questions.length)];

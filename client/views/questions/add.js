@@ -1,17 +1,9 @@
-
-
-Router.map(function() {
-	this.route('questionAdd', {
-		path : '/question/add'
-	});
-});
-
-Template.questionAdd.rendered = function() {
+Template.question_add.rendered = function() {
 	var famousData = famousCmp.dataFromTpl(this);
 	famousData.modifier.setTransform(Transform.translate(0, 0), trans);
 }; 
 
-Template.questionAdd.events({
+Template.question_add.events({
   'submit form': function(e) {
     e.preventDefault();
 

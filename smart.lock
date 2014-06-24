@@ -6,7 +6,8 @@
       "famono": {},
       "famous-components": {},
       "flatstrap": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "spin": {}
     },
     "packages": {
       "iron-router": {
@@ -16,13 +17,13 @@
       },
       "famono": {
         "git": "https://github.com/raix/Meteor-famono.git",
-        "tag": "v0.3.8",
-        "commit": "4a1742a37253eef3834e52c97b98570265adc785"
+        "tag": "v0.3.10",
+        "commit": "79a0077f3615d7dce1bcdf19dcff251d9915d664"
       },
       "famous-components": {
         "git": "https://github.com/gadicc/meteor-famous-components.git",
-        "tag": "v0.0.13",
-        "commit": "c884741c947bb222c8186e784bc288fa77d0efdf"
+        "tag": "v0.0.15",
+        "commit": "371bb247a45ee3c446202b38680be53d5229118d"
       },
       "flatstrap": {
         "git": "https://github.com/fraherm/flatstrap.git",
@@ -33,6 +34,11 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

@@ -1,0 +1,6 @@
+form#login-signup input {
+	border: none !important;
+	height:50px;
+	width:250px;
+	font-size:20px;
+}

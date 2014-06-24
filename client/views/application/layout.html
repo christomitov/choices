@@ -1,0 +1,14 @@
+<template name="layout">
+	{{#HeaderFooterLayout size="[undefined,undefined]" headerSize="150"}}
+	    {{#Surface target="header"}}
+			{{# header}}
+			    {{> backButton}}
+			{{/ header}}
+	    {{/Surface}}
+	    {{#Surface target="content"}}
+						<div class="container">			
+	       	 			{{> yield}}
+	       	 		</div>
+	    {{/Surface}}
+	{{/HeaderFooterLayout}}
+</template>

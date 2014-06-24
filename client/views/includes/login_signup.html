@@ -1,0 +1,39 @@
+<template name="splash">
+	<div class="row text-center">
+		<h1>Welcome to YesNo</h1>
+	</div>
+	<div id="login-signup-buttons" class="row">
+		<div class="span12">
+			<a href="/login" class="btn btn-primary btn-block">Log In</a>
+			<a href="/signup" class="btn btn-primary btn-block">Sign Up</a>
+		</div>
+	</div>
+</template>
+
+<template name="login">
+	<div class="row text-center">
+		<a href="/login" class="btn btn-primary btn-large">Log In</a>
+		<form id="login-signup">
+			{{> userPassInputs}}
+			<button class="btn btn-primary">Login</button>
+		</form>
+	</div>
+</template>
+
+<template name="signup">
+	<div class="row text-center">
+		<form id="login-signup">
+			{{> userPassInputs}}
+			<button class="btn btn-primary">Signup</button>
+		</form>
+	</div>
+</template>
+
+<template name="userPassInputs">
+	<div class="controls">
+		<input type="text" name="username" placeholder="Username">
+	</div>
+	<div class="controls">
+		<input type="password" name="password" placeholder="Password">
+	</div>
+</template>
