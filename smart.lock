@@ -8,7 +8,8 @@
       "flatstrap": {},
       "font-awesome": {},
       "spin": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "cordova": {}
     },
     "packages": {
       "iron-router": {
@@ -45,6 +46,11 @@
         "git": "https://github.com/Multiply/iron-router-progress.git",
         "tag": "v0.4.0",
         "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+      },
+      "cordova": {
+        "git": "https://github.com/raix/Meteor-cordova.git",
+        "tag": "v0.0.8",
+        "commit": "4eff8b9a853673f5f4b450a0102e78f554836da4"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

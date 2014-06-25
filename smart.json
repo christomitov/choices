@@ -6,6 +6,7 @@
     "flatstrap": {},
     "font-awesome": {},
     "spin": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "cordova": {}
   }
 }

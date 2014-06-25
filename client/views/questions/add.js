@@ -14,6 +14,6 @@ Template.questionAdd.events({
     }
 
     question._id = Questions.insert(question);
-    Router.go('question_view');
+    Router.go('questionView');
   }
 });
