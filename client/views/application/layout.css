@@ -25,3 +25,10 @@ body {
 .navbar {
 	margin-bottom:100px;
 }
+
+.full {
+	display:block;
+	width:100px;
+	height:100px;
+	background:red;
+}
