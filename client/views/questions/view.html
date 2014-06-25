@@ -1,7 +1,10 @@
 <template name="questionView">
-	{{#with question}}
-		{{> questionText}}
-	{{/with}}
+	{{#Surface size="[undefined,undefined]"}}
+	<h1>Questions</h1>
+		{{#with question}}
+			{{> questionText}}
+		{{/with}}
+	{{/Surface}}
 </template>
 
 

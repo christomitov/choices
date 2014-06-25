@@ -5,14 +5,16 @@
 			    {{> backButton}}
 			{{/ header}}
 	    {{/Surface}}
-	    {{#Surface target="content"}}
-	    {{#RenderController transition=getTransition
-					size="[undefined,undefined]"}}
-					<div class="container">
-	       		{{> yield name=currentTemplate}}
-	       	</div>
-			{{/RenderController}}
-						
-	    {{/Surface}}
+	    {{>View target="content" template="mainYield" size="[undefined,undefined]"}}
 	{{/HeaderFooterLayout}}
+</template>
+
+
+
+<template name="mainYield">
+    {{#RenderController transition=getTransition size="[undefined,undefined]"}}
+		<div class="container">
+       		{{> yield}}
+       	</div>
+	{{/RenderController}}
 </template>

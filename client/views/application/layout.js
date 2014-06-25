@@ -17,20 +17,11 @@ Meteor.startup(function() {
     };
 });
 
-
-Template.layout.helpers({
-    'showTemplate': function() {
-        return Template[this.name];
-    },
+Template.mainYield.helpers({
     'getTransition': function() {
-				return Session.get('currentTransition');
-		}
+		return Session.get('currentTransition');
+	}
 });
- 
-Session.setDefault('currentTemplate', 'questionText');
+
 Session.setDefault('currentTransition', 'slideWindow');
 Session.setDefault('transitionPages', true);
-
-Template.layout.currentTemplate = function() {
-    return Session.get('currentTemplate');
-};
