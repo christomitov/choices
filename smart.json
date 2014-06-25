@@ -5,6 +5,7 @@
     "famous-components": {},
     "flatstrap": {},
     "font-awesome": {},
-    "spin": {}
+    "spin": {},
+    "iron-router-progress": {}
   }
 }

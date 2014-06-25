@@ -5,7 +5,7 @@ Template.question_add.rendered = function() {
 }; */
 
 
-Template.question_add.events({
+Template.questionAdd.events({
   'submit form': function(e) {
     e.preventDefault();
 

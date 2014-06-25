@@ -10,12 +10,12 @@ Template.signup.events({
 			password : password
 		}, function(err) {
 			if (err) {
-
+				console.log(err);
 				// Inform the user that account creation failed
 			} else {
 
 				//Meteor.loginWithPassword(username,password);
-				Router.go("question_view");
+				Router.go("questionView");
 				// Success. Account has been created and the user
 				// has logged in successfully.
 			}
@@ -44,7 +44,7 @@ Template.login.events({
 			// could be incorrect. Inform the user that their
 			// login attempt has failed.
 			else {
-				Router.go('question_view');
+				Router.go('questionView');
 			}
 			// The user has been logged in.
 		});

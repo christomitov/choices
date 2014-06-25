@@ -1,12 +1,19 @@
-<template name="question_view">
+<template name="questionView">
+	{{#with question}}
+		{{> questionText}}
+	{{/with}}
+</template>
+
+
+<template name="questionText">
 	<div class="row text-center">
-		<span class="question-text">{{question.questionText}}</span>
+    	<span class="question-text">{{questionText}}</span>
 	</div>
 	<div class="row text-center">
 		<div id="vote-buttons" class="span12 text-center">
 			<div class="btn-toolbar">
-			  <a href="#"><i class="fa fa-check"></i></a>
-			  <a href="#"><i class="fa fa-times"></i></a>
+			  <a href="#" class="yes"><i class="fa fa-check"></i></a>
+			  <a href="#" class="no"><i class="fa fa-times"></i></a>
 			</div>
 		</div>
 	</div>
