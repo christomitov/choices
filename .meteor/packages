@@ -4,13 +4,10 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
-insecure
 iron-router
 famono
 famous-components
 flatstrap
 font-awesome
-accounts-ui
 accounts-password
 spin

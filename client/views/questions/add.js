@@ -1,7 +1,9 @@
+/*
 Template.question_add.rendered = function() {
 	var famousData = famousCmp.dataFromTpl(this);
 	famousData.modifier.setTransform(Transform.translate(0, 0), trans);
-}; 
+}; */
+
 
 Template.question_add.events({
   'submit form': function(e) {
@@ -12,6 +14,6 @@ Template.question_add.events({
     }
 
     question._id = Questions.insert(question);
-    Router.go('questionView');
+    Router.go('question_view');
   }
 });
