@@ -1,8 +1,6 @@
 {
   "packages": {
     "iron-router": {},
-    "famono": {},
-    "famous-components": {},
     "flatstrap": {},
     "font-awesome": {},
     "spin": {},

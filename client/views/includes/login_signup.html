@@ -2,7 +2,7 @@
 	<div class="row text-center">
 		<h1>Welcome to YesNo</h1>
 	</div>
-	<div id="login-signup-buttons" class="row">
+	<div id="login-signup-buttons" class="row text-center">
 		<div class="span12">
 			<a href="/login" class="btn btn-primary btn-block">LOGIN</a>
 			<a href="/signup" class="btn btn-primary btn-block">SIGNUP</a>
@@ -15,6 +15,7 @@
 		<form id="login-signup">
 			{{> userPassInputs}}
 			<button class="btn btn-primary btn-large">LOGIN</button>
+      <button id="cancel" class="btn btn-secondary btn-large">CANCEL</button>
 		</form>
 	</div>
 </template>
@@ -23,7 +24,8 @@
 	<div class="row text-center">
 		<form id="login-signup">
 			{{> userPassInputs}}
-			<button class="btn btn-primary btn-large">SIGNUP</button>
+			<button class="btn btn-primary btn-large">SIGNUP</button> 
+      <button id="cancel" class="btn btn-secondary btn-large">CANCEL</button>
 		</form>
 	</div>
 </template>

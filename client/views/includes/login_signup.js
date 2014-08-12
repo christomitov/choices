@@ -1,4 +1,8 @@
 Template.signup.events({
+  'click #cancel' : function(e) {
+    e.preventDefault();
+    Router.go("splash");
+  },
 	'submit form' : function(e, t) {
 		e.preventDefault();
 		var username = t.find('[name=username]').value;
@@ -28,6 +32,10 @@ Template.signup.events({
 });
 
 Template.login.events({
+  'click #cancel' : function(e) {
+    e.preventDefault();
+    Router.go("splash");
+   },
 	'submit form' : function(e, t) {
 		e.preventDefault();
 		// retrieve the input field values

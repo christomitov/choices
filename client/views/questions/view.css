@@ -17,6 +17,7 @@
 
 #vote-buttons {
 	bottom:30px;
+  margin-left:0px;
 	position:absolute;
 }
 
