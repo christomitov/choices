@@ -1,7 +1,8 @@
 Template.signup.events({
 	'submit form' : function(e, t) {
 		e.preventDefault();
-		var username = t.find('[name=username]').value, password = t.find('[name=password]').value;
+		var username = t.find('[name=username]').value;
+    var password = t.find('[name=password]').value;
 
 		// Trim and validate the input
 
@@ -30,7 +31,8 @@ Template.login.events({
 	'submit form' : function(e, t) {
 		e.preventDefault();
 		// retrieve the input field values
-		var username = t.find('[name=username]').value, password = t.find('[name=password]').value;
+		var username = t.find('[name=username]').value;
+    var password = t.find('[name=password]').value;
 
 		// Trim and validate your fields here....
 
@@ -38,7 +40,7 @@ Template.login.events({
 		// Meteor.loginWithPassword() function.
 		Meteor.loginWithPassword(username, password, function(err) {
 			if (err) {
-				
+			  console.log(err);	
 			}
 			// The user might not have been found, or their passwword
 			// could be incorrect. Inform the user that their

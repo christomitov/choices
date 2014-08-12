@@ -1,14 +1,12 @@
 <template name="questionAdd">
-	{{#Surface size="[undefined,undefined]"}}
-	<form id="ask-question-form">
-		<div class="row">
+  <form id="ask-question-form" method="post">
+	  <div class="row">
 			<div id="ask-question" class="text-center">
 				<input type="text" name="questionText" placeholder="Ask a Question…">
 			</div>
 		</div>
 		<div class="row text-center">
-			<button><i class="fa fa-envelope"></i></button>
+			<button id="submit"><i class="fa fa-envelope"></i></button>
 		</div>
 	</form>
-	{{/Surface}}
 </template>

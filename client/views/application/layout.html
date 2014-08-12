@@ -1,20 +1,8 @@
 <template name="layout">
-	{{#HeaderFooterLayout size="[undefined,undefined]" headerSize="150"}}
-	    {{#Surface target="header"}}
-			{{# header}}
-			    {{> backButton}}
-			{{/ header}}
-	    {{/Surface}}
-	    {{>View target="content" template="mainYield" size="[undefined,undefined]"}}
-	{{/HeaderFooterLayout}}
-</template>
-
-
-
-<template name="mainYield">
-    {{#RenderController transition=getTransition size="[undefined,undefined]"}}
-		<div class="container">
-       		{{> yield}}
-       	</div>
-	{{/RenderController}}
+  {{# header}}
+	  {{> backButton}}
+	{{/ header}}
+  <div id="main" class="container">
+    {{> yield}}
+  </div>
 </template>

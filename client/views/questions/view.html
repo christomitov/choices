@@ -1,25 +1,20 @@
 <template name="questionView">
-	{{#Surface size="[undefined,undefined]"}}
-	<h1>Questions</h1>
-		{{#with question}}
-			{{> questionText}}
-		{{/with}}
-	{{/Surface}}
+  {{#with question}}
+    {{> questionText}}
+  {{/with}}
 </template>
 
 
 <template name="questionText">
-	{{#Surface size="[undefined,undefined]"}}
-	<div class="row text-center">
-    	<span class="question-text">{{questionText}}</span>
-	</div>
-	<div class="row text-center">
-		<div id="vote-buttons" class="span12 text-center">
-			<div class="btn-toolbar">
-			  <a href="#" class="yes"><i class="fa fa-check"></i></a>
-			  <a href="#" class="no"><i class="fa fa-times"></i></a>
-			</div>
-		</div>
-	</div>
-	{{/Surface}}
+  <div class="row text-center">
+    <span class="question-text">{{questionText}}</span>
+  </div>
+  <div class="row text-center">
+    <div id="vote-buttons" class="span12 text-center">
+	    <div class="btn-toolbar">
+	      <a href="#" class="yes"><i class="fa fa-check"></i></a>
+	      <a href="#" class="no"><i class="fa fa-times"></i></a>
+	    </div>
+    </div>
+  </div>
 </template>
