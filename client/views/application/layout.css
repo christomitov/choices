@@ -1,6 +1,11 @@
 .fa-plus-circle, .fa-chevron-left {
 	font-size:50px;
-	padding:0px 20px 0px 20px;
+	padding:0px 0px 0px 0px;
+}
+
+.fa-users {
+  font-size:40px;
+  padding:5px 10px 0px 20px;
 }
 
 a, a:hover {
@@ -12,13 +17,16 @@ a, a:hover {
 	border: 0 none !important;
 }
 
+.navbar-fixed-top {
+  margin:0px;
+}
+
 body {
 	background: #ecf0f1;
   padding:0px;
 }
 
 body div#main {
-  margin-top:100px;
 }
 
 .brand {

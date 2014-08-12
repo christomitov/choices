@@ -1,0 +1,28 @@
+ul#users-list {
+  margin:0px;
+  padding:0px;
+}
+
+li.user-item {
+  display:block;
+  height:60px;
+  width:100%;
+  font-size:30px;
+  text-align:center;
+  line-height:60px;
+  color:#000;
+  border-bottom: 1px solid #999;
+}
+
+li.user-item#add {
+  background: #8e44ad;
+  color: #fff;
+  font-weight:bold;
+}
+
+li.user-item.selected {
+  background: white !important;
+  color: black;
+  box-shadow: 0px 0px 5px #000;
+  text-transform: uppercase;
+}

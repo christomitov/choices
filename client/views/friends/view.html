@@ -1,0 +1,12 @@
+<template name="friends">
+  <ul id="users-list">
+    <li id="add" class="user-item">
+      ADD
+    </li>
+    {{#each friends}}
+      <li class="user-item friend">
+        {{name}}
+      </li>
+    {{/each}}
+  </ul>
+</template>

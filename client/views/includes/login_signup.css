@@ -8,3 +8,7 @@ form#login-signup input {
 form#login-signup {
   margin-top:100px;
 }
+
+div#login-signup-buttons {
+  margin: 0px;
+}

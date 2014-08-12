@@ -3,7 +3,10 @@
 		<div class="navbar-inner">
 			<div class="container">
 				{{> UI.contentBlock}}
-				<a href="/question/add" class="pull-right">
+        <a href="{{pathFor 'friends'}}" class="pull-right">
+          <i class="fa fa-users"></i>
+        </a>
+        <a href="{{pathFor 'questionAdd'}}" class="pull-right">
           <i class="fa fa-plus-circle"></i>
         </a>
 			</div>
