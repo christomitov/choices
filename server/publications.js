@@ -3,5 +3,5 @@ Meteor.publish('questions', function() {
 });
 
 Meteor.publish('friends', function() {
-  return Friends.find();
+  return Friends.find({belongsTo: this.userId});
 });

@@ -7,8 +7,6 @@ Questions.allow({
   }
 });
 
-
-
 Meteor.methods({
   yes: function(questionId) {
   	var user = Meteor.user();
@@ -24,7 +22,6 @@ Meteor.methods({
       $addToSet: {voters: user._id},
       $inc: {yes: 1}
     });
-    Router.go("questionView");
   },
   no: function(questionId) {
 		var user = Meteor.user();
@@ -40,6 +37,5 @@ Meteor.methods({
       $addToSet: {voters: user._id},
       $inc: {no: 1}
     });
-    Router.go("questionView");
   }
 });

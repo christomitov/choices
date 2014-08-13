@@ -5,8 +5,13 @@ Template.friendsAdd.events({
     var friend = {
       name: $(e.target).find('[name=name]').val(),
     };
-
-    friend._id = Friends.insert(friend);
-    Router.go("friends");
+    
+    Meteor.call('userExists', friend.name, function(error, status) {
+      if(status) {
+        Router.go("friends");
+      } else {
+        console.log("can't add");
+      }
+    });
   }
 });
