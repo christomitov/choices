@@ -4,6 +4,6 @@ Template.header.events({
     $('li.selected').each(function() {
       idList.push($(this).attr('id'));
     });
-    console.log(idList);
+    Session.set("usersToQuestion", idList);
   }
 });

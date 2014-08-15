@@ -1,7 +1,6 @@
 Template.friends.helpers({
   friends: function() {
-    var friends = Friends.find().fetch();
-    return friends;
+    return Friends.find().fetch();
   }
 });
 

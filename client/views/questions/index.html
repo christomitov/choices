@@ -1,8 +1,9 @@
 <template name="questionList">
-  <h1>HERE</h1>
-  <ul>
+  <ul id="list">
     {{#each questions}}
-      <li>{{username}} is asking something</li>
+      <li id="{{_id}}" class="item question">
+        {{username}} is asking something
+      </li>
     {{/each}}
   </ul>
 </template>

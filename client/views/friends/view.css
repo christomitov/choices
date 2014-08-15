@@ -1,9 +1,9 @@
-ul#users-list {
+ul#list {
   margin:0px;
   padding:0px;
 }
 
-li.user-item {
+li.item {
   display:block;
   height:60px;
   width:100%;
@@ -14,13 +14,13 @@ li.user-item {
   border-bottom: 1px solid #999;
 }
 
-li.user-item#add {
+li.item#add {
   background: #8e44ad;
   color: #fff;
   font-weight:bold;
 }
 
-li.user-item.selected {
+li.item.selected {
   background: white !important;
   color: black;
   box-shadow: 0px 0px 5px #000;

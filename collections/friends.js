@@ -11,12 +11,15 @@ Meteor.methods({
     check(username, String);
     var user = Meteor.user();
     var userToAdd = Meteor.users.findOne({username: username});
+    console.log(userToAdd);
     if(userToAdd) {
-      Friends.insert({
-        username: username, 
+      var friend = {
+        username: username,
         userId: userToAdd._id,
         belongsTo: user._id
-      });
+      }
+      console.log(friend);
+      Friends.insert(friend);
     }
     return userToAdd;
   }

@@ -1,10 +1,10 @@
 <template name="friends">
-  <ul id="users-list">
-    <li id="add" class="user-item">
+  <ul id="list">
+    <li id="add" class="item">
       ADD
     </li>
     {{#each friends}}
-      <li id="{{_id}}" class="user-item friend">
+      <li id="{{userId}}" class="item friend">
         {{username}}
       </li>
     {{/each}}
