@@ -11,5 +11,5 @@ Template.friends.events({
   },
   'click li.friend' : function(e) {
     $(e.target).toggleClass("selected");
-  }
+  },
 });
